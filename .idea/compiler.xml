@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="CZVoiceBotStream" />
+        <module name="CZVoiceGBotStream" />
+        <module name="CZUshaVoiceBotStream" />
+        <module name="CZOmkaraVoiceBotStream" />
+        <module name="CZOmkaraVoiceBotPro" />
+        <module name="VoiceBotRuleEngine" />
+        <module name="DialogicBlend" />
+        <module name="websockets-transcription" />
+        <module name="CZ_Voice_Bot" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="CZOmkaraVoiceBotPro" options="-parameters" />
+      <module name="CZOmkaraVoiceBotStream" options="-parameters" />
+      <module name="CZUshaVoiceBotStream" options="-parameters" />
+      <module name="CZVoiceBotStream" options="-parameters" />
+      <module name="CZVoiceGBotStream" options="-parameters" />
+      <module name="CZ_Voice_Bot" options="-parameters" />
+      <module name="DialogicBlend" options="-parameters" />
+      <module name="VoiceBotRuleEngine" options="-parameters" />
+      <module name="websockets-transcription" options="-parameters" />
+    </option>
+  </component>
+</project>
