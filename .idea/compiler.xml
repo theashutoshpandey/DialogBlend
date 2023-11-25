@@ -15,6 +15,7 @@
         <module name="DialogicBlend" />
         <module name="websockets-transcription" />
         <module name="CZ_Voice_Bot" />
+        <module name="DialogBlend" />
       </profile>
     </annotationProcessing>
   </component>
@@ -26,6 +27,7 @@
       <module name="CZVoiceBotStream" options="-parameters" />
       <module name="CZVoiceGBotStream" options="-parameters" />
       <module name="CZ_Voice_Bot" options="-parameters" />
+      <module name="DialogBlend" options="-parameters" />
       <module name="DialogicBlend" options="-parameters" />
       <module name="VoiceBotRuleEngine" options="-parameters" />
       <module name="websockets-transcription" options="-parameters" />

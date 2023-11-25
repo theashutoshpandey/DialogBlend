@@ -17,12 +17,12 @@ public class ConversationRuleMapper {
                                 "/root", MatchCase.NONE));
 
                 conversations.add(new Conversation(
-                                "Happy Diwali to you and your family from the C-Zentrix team! A surprise gift is waiting for you—just make the right guess.",
+                                "Happy New Year, to you and your family from the DialogBlend team! A surprise gift is waiting for you—just make the right guess.",
                                 "Positive,Very positive,Neutral", MatchCase.NLP));
 
                 conversations.add(new Conversation(
                                 "Want to play?",
-                                "Positive,Very positive,Neutral", MatchCase.NLP));
+                                "Positive,Very positive", MatchCase.NLP));
 
                 conversations.add(new Conversation(
                                 "Guess a number from zero to ten.",
@@ -30,7 +30,7 @@ public class ConversationRuleMapper {
                                 MatchCase.NUMBER));
 
                 conversations.add(new Conversation(
-                                "Wow! You have won! We will shortly send you the gift. Wishing you, again, a Very Happy Deepawali.",
+                                "Wow! You have won! We will shortly send you the gift. Wishing you, again, a Very Happy New Year.",
                                 "end", MatchCase.STRING));
 
                 conversations.add(new Conversation(

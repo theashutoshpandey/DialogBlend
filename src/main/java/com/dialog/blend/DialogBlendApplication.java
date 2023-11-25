@@ -8,12 +8,15 @@ import edu.stanford.nlp.ling.CoreAnnotations;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
+import edu.stanford.nlp.simple.Document;
+import edu.stanford.nlp.simple.Sentence;
 import edu.stanford.nlp.util.CoreMap;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.system.ApplicationHome;
 
 import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Properties;
 
 @SpringBootApplication
@@ -32,7 +35,16 @@ public class DialogBlendApplication {
 			}
 		}
 
-		String sent = "over-marrow";
+		String sent = "Good Morning, In the bustling city of New York, John Smith, a renowned entrepreneur and philanthropist, founded XYZ Corporation in 2005. The company, headquartered on Wall Street, quickly became a leading player in the technology sector. On September 15, 2022, XYZ Corporation announced a strategic partnership with Global Innovations Inc., a cutting-edge research organization based in Silicon Valley. The collaboration aims to revolutionize artificial intelligence and enhance the capabilities of natural language processing. Driven by a commitment to sustainability, both organizations pledged to launch 'InnoBot,' an eco-friendly AI product, in early 2023. This groundbreaking initiative received accolades from environmental groups like GreenTech Alliance and CleanTech Now. The announcement drew the attention of major media outlets, including The New York Times and CNN, as well as influential personalities such as Elon Musk, CEO of SpaceX and Tesla, who expressed enthusiasm for the project. As anticipation builds, XYZ Corporation and Global Innovations Inc. remain at the forefront of innovation and corporate responsibility.";
+
+
+		String text = "Good morning! How are you today?";
+		Document doc = new Document(text);
+
+// Example: Get the sentences and print the tokens and their part-of-speech tags
+		for (Sentence sentence : doc.sentences()) {
+			System.out.println("Tokens and POS tags: " + sentence.words() + " " + sentence.posTags()+" "+sentence.nerTags());
+		}
 
 		Properties props = new Properties();
 		props.setProperty("annotators", "tokenize, ssplit, pos, lemma, ner");

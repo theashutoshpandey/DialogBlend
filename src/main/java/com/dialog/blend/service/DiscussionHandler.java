@@ -85,7 +85,7 @@ public class DiscussionHandler {
                 return gson.toJson(userQuery.setResponse(conversations.get(questionIndex).getBotQuestion()));
             } else {
                 return gson.toJson(userQuery.setHangup(1).setResponse(
-                        "Thanks for playing. Despite the outcome, I appreciate your participation. Once again, Happy Diwali! Take Care"));
+                        "Thanks for playing. Despite the outcome, I appreciate your participation. Once again, Happy New Year! Take Care"));
             }
 
         } else if (stage == 3) { // NLP
@@ -96,7 +96,7 @@ public class DiscussionHandler {
                     return gson.toJson(userQuery.setResponse(conversations.get(questionIndex).getBotQuestion()));
                 } else {
                     return gson.toJson(userQuery.setHangup(1).setResponse(
-                            "Oh, sorry to hear that. Thanks for your time once again. Happy Diwali! Take care."));
+                            "Oh, sorry to hear that. Thanks for your time once again. Happy New Year! Take care."));
                 }
             } else if (questionIndex == 5) { // to try one more attempt
 
@@ -105,7 +105,7 @@ public class DiscussionHandler {
                     return gson.toJson(userQuery.setResponse(conversations.get(questionIndex).getBotQuestion()));
                 } else {
                     return gson.toJson(userQuery.setHangup(1)
-                            .setResponse("Thanks for your time once again. Happy Diwali! Take care.")); // attempt max
+                            .setResponse("Thanks for your time once again. Happy New Year! Take care.")); // attempt max
                 }
 
             } else if (checkResultContains(conversation.getExpectedAnswer(), sentiment, userQuery.getMessage())) {
