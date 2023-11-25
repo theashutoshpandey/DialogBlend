@@ -1,6 +1,6 @@
 # DialogBlend
 
-DialogBlend is a robust platform designed for the development of chatbots, voice bots, and virtual agents. Equipped with built-in natural language understanding (NLU) and natural language processing (NLP) capabilities, this Java-based backend platform is currently in active development.
+DialogBlend is a robust Application designed for the development of chatbots, voice bots, and virtual agents. Equipped with built-in natural language understanding (NLU) and natural language processing (NLP) capabilities, this Java-based backend platform is currently in active development.
 
 ## Features
 
